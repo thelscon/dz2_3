@@ -5,4 +5,17 @@ alert ('Запросить у пользователя год рождения. 
 //let yearOfBirth = Number (prompt ('Введите ваш год рождения: '));
 //let age = 2020 - yearOfBirth;
 //alert ('Ваш возраст - около ' + age + ' лет.');
-alert ('Ваш возраст - около ' + ( 2020 - Number (prompt ('Введите ваш год рождения: '))) + ' лет.');
+let yyear = Number (prompt ('Введите ваш год рождения: '));
+
+if (isNaN (yyear)) {
+    alert('Вы не ввели число');
+}
+else if (yyear > 18) {
+    alert ('Доступ разрешен');
+}
+else if (yyear < 12) {
+    alert('используйте другой сервис');
+}
+else {
+    alert ('доступ запрещен');
+}
